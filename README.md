@@ -1,3 +1,3 @@
-# flowers_html
-Макет интернет-магазина цветов
+# avon_html
+Лендинг AVON
 # avon_html
