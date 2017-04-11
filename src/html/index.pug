@@ -14,17 +14,34 @@ html
 	body
 		header.header
 			.container
-				a.logo(href="/")
-					img(src="img/header_logo.png")
+				.header__wrapper
+					a.header__logo(href="/")
+						img(src="img/logo.png")
+					.header__contacts
+						a.header__contacts-item.header__contacts-item--email(href="mailto:avon-team@yandex.ru") 
+							span avon-team@yandex.ru
+						a.header__contacts-item.header__contacts-item--phone(href="") 
+							span +7 904-322-80-79
 
-				ul.header-menu
-					li.header-menu__item
-						a.header-menu__link(href="#") Отзывы
-					li.header-menu__item
-						a.header-menu__link(href="#") Доставка и оплата
-					li.header-menu__item
-						a.header-menu__link(href="#") Ответы на вопросы
-					li.header-menu__item
-						a.header-menu__link(href="#") О компании
-					li.header-menu__item
-						a.header-menu__link(href="#") Наши магазины
+			nav.main-menu
+				.container
+					.main-menu__wrapper
+						ul.main-menu__list
+							li.main-menu__item
+								a.main-menu__link(href="#") О нас
+							li.main-menu__item
+								a.main-menu__link(href="#") Как стать представителем
+							li.main-menu__item
+								a.main-menu__link(href="#") Анкета
+							li.main-menu__item
+								a.main-menu__link(href="#") Каталог
+							li.main-menu__item
+								a.main-menu__link(href="#") Подарки и бонусы
+							li.main-menu__item
+								a.main-menu__link(href="#") Контакты
+
+						.social-icons
+							a.social-icons__item.social-icons__item--fb(href="#")
+							a.social-icons__item.social-icons__item--vk(href="#")
+							a.social-icons__item.social-icons__item--odn(href="#")
+

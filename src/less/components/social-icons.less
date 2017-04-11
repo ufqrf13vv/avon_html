@@ -1,0 +1,41 @@
+.social-icons {
+	display: flex;
+	background: #7d2670;
+	padding: 10px 0 10px 20px;
+	position: relative;
+
+	&::before {
+		content: '';
+		display: block;
+		width: 0;
+		height: 0;
+		border-bottom: 54px solid #7d2670; 
+		border-left: 30px solid transparent;		
+		position: absolute;
+		top: 0;
+		left: -30px;
+	}
+
+	&__item {
+		display: block;
+		width: 30px;
+		height: 30px;
+		border: 1px solid #c296ad;
+
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
+
+		&--fb {
+			background: url('../img/social-icons.png') no-repeat 2px -17px;
+		}
+
+		&--vk {
+			background: url('../img/social-icons.png') no-repeat 2px 5px;
+		}
+
+		&--odn {
+			background: url('../img/social-icons.png') no-repeat 4px -42px;
+		}
+	}
+}

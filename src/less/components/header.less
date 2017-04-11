@@ -1,0 +1,63 @@
+.header {
+	height: 930px;
+	background: url('../../img/header_bg.jpg') no-repeat 50% 0, #FFB700;
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 45px;
+		padding-bottom: 35px;
+	}
+
+	&__logo {
+		display: block;
+	}
+
+	&__contacts {
+		display: flex;
+
+		&-item {
+			display: flex;
+			font-size: 14px;
+			text-decoration: none;
+			color: #000;
+			padding-left: 55px;
+			position: relative;
+
+			&--email {
+				margin-right: 55px;
+			}
+
+			&--email::before {
+				content: '';
+				display: block;
+				width: 40px;
+				height: 40px;
+				background: url('../img/header_sprite.png') no-repeat 50% 2px;
+				border: 1px solid #000;
+				position: absolute;
+				left: 0;
+			}
+
+			&--phone {
+				font-size: 24px;
+				font-weight: bold;
+			}
+
+			&--phone::before {
+				content: '';
+				display: block;
+				width: 40px;
+				height: 40px;
+				background: url('../img/header_sprite.png') no-repeat 50% -55px;
+				border: 1px solid #000;
+				position: absolute;
+				left: 0;
+			}
+
+			& > span {
+				align-self: center;
+			}
+		}
+	}
+}
