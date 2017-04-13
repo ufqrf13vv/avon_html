@@ -13,7 +13,6 @@ body {
 	height: 100%;
 	font-family: 'Arial';
 	font-size: 15px;
-	line-height: 18px;
 	overflow-x: hidden;
 }
 
@@ -23,16 +22,16 @@ img {
 
 .container {
 	margin: 0 auto;
-	padding: 0 15px;
-
 	overflow: hidden;
 
 	@media @extrasmall {
 		width: @xs;
+		padding: 0;
 	}
 
 	@media @small {
 		width: @sm;
+		padding: 0 15px;
 	}
 
 	@media @medium {
@@ -44,7 +43,30 @@ img {
 	}
 }
 
+input {
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 11px 15px;
+	font-size: 16px;
+	border: none;
+}
+
 input:focus,
 button:focus {
 	outline: none;
+}
+
+h2 {
+	font-weight: bold;
+	text-transform: uppercase;
+
+	@media @medium {
+		font-size: 30px;
+		margin-bottom: 45px;
+	}
+
+	@media @small {
+		font-size: 25px;
+		margin-bottom: 25px;
+	}
 }

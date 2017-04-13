@@ -8,9 +8,6 @@ html
 		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
 		link(rel='stylesheet', href='css/style.css')
 
-		//- script(src="script/jquery-2.2.0.js", type="text/javascript")
-		//- script(src="script/scripts.js", type="text/javascript")
-
 	body
 		header.header
 			.container
@@ -20,7 +17,7 @@ html
 					.header__contacts
 						a.header__contacts-item.header__contacts-item--email(href="mailto:avon-team@yandex.ru") 
 							span avon-team@yandex.ru
-						a.header__contacts-item.header__contacts-item--phone(href="") 
+						a.header__contacts-item.header__contacts-item--phone(href="tel:+79043228079") 
 							span +7 904-322-80-79
 
 			nav.main-menu
@@ -44,4 +41,106 @@ html
 							a.social-icons__item.social-icons__item--fb(href="#")
 							a.social-icons__item.social-icons__item--vk(href="#")
 							a.social-icons__item.social-icons__item--odn(href="#")
+			
+			.container
+				.slogan
+					.slogan__header Стань нашим представителем!
+					.slogan__text Начни зарабатывать прямо сейчас
 
+				form.feedback-form
+					.feedback-form__header Как стать представителем?
+					input(type="text" placeholder="Представьтесь")
+					input(type="text" placeholder="Телефон")
+					.feedback-form__submit
+						input(type="submit" value="Отправить")
+
+		.container
+			main.content
+				.content__image
+					img(src="img/photo.jpg")
+				.content__text
+					h2 О компании
+					p Avon – это компания, которая наносит тушь на ресницы и дает пищу на столы, которая одной рукой борется с морщинами, а другой – с раком груди. Компания, которая знает цену идеальным губам и все же не молчит, а говорит «Нет» домашнему насилию и «Да» самореализации и финансовой независимости женщин. Это компания, которая не только приносит красоту в дом, но и открывает двери в мир новых возможностей. Компания, которая поддерживает 6 млн Представителей в более чем 70 странах мира. Это – Avon. Компания, которая на протяжении 130 лет работает во имя красоты, инноваций, оптимизма и, прежде всего, во имя женщин.
+		
+		.how-to
+			.container
+				h2.how-to__header Как стать представителем
+				ul.how-to__list
+					li.how-to__item.how-to__item--odd
+						.how-to__image
+							img(src="../img/worksheet/Forma-1.png")
+							span.how-to__number 1
+							.how-to__arrow-right
+						.how-to__wrapper
+							.how-to__subheader Заполните анкету
+							.how-to__text Вы заполняете анкету на сайте и наши менеджеры<br> связываются с вами
+					li.how-to__item.how-to__item--even
+						.how-to__image
+							span.how-to__number 2
+							img(src="../img/worksheet/Forma-2.png")
+							.how-to__arrow-left
+						.how-to__wrapper
+							.how-to__subheader Получите каталог
+							.how-to__text Изучите всю нашу продукцию<br> для большего успеха
+					li.how-to__item.how-to__item--odd
+						.how-to__image
+							img(src="../img/worksheet/Forma-3.png")
+							span.how-to__number 3
+							.how-to__arrow-right
+						.how-to__wrapper
+							.how-to__subheader Собирайте заказы
+							.how-to__text Делайте заказы и оформляйте их через<br> сеть Интернет
+					li.how-to__item.how-to__item--even
+						.how-to__image
+							span.how-to__number 4
+							img(src="../img/worksheet/Forma-4.png")
+							.how-to__arrow-left
+						.how-to__wrapper
+							.how-to__subheader получайте<br> прибыль и бонусы
+							.how-to__text Корпорация предоставляет бонусные скидки и подарки<br> от компании, предназначенные для новичков
+					li.how-to__item.how-to__item--odd
+						.how-to__image
+							img(src="../img/worksheet/Forma-5.png")
+							span.how-to__number 5
+						.how-to__wrapper
+							.how-to__subheader стройте свой<br> собственный бизнес
+
+		.worksheet
+			.container
+				form.worksheet__form
+					h2.worksheet__header Анкета представителя
+					.worksheet__subheader Заполните анкету и получайте бонусы и скидки
+					.worksheet__wrapper
+						input.worksheet__input(type="text", placeholder="ФИО")
+						input.worksheet__input(type="text", placeholder="Телефон")
+						input.worksheet__input(type="text", placeholder="Email")
+						input.worksheet__input(type="text", placeholder="Адрес проживания")
+					input.worksheet__submit(type="submit", value="Отправить")
+		
+		.bonus
+			.container
+				.bonus__header Стань представителем,<br> получи скидку
+				.bonus__slogan
+					.bonus__percent 30%
+					.bonus__plus +
+					img(src="img/present.png")
+				.bonus__wrapper
+					button.bonus__button Получить
+
+		footer.footer
+			.container
+				.footer__wrapper
+					.footer__contacts
+						.footer__contacts-item.footer__contacts-item--adress 
+							span г. Омск, ул. Фрунзе, 80
+						a.footer__contacts-item.footer__contacts-item--phone(href="tel:+79043228079") 
+							span +7 904-322-80-79
+						a.footer__contacts-item.footer__contacts-item--email(href="mailto:avon-team@yandex.ru") 
+							span avon-team@yandex.ru
+				
+					.footer__block
+						.social-icons.social-icons--footer
+							a.social-icons__item.social-icons__item--fb(href="#")
+							a.social-icons__item.social-icons__item--vk(href="#")
+							a.social-icons__item.social-icons__item--odn(href="#")
+						a.footer__developer(href="/") Разработка и поддержка ITB-company

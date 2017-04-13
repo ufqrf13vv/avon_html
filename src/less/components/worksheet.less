@@ -1,0 +1,89 @@
+.worksheet {
+	background: url('../img/worksheet/worksheet_bg.png');
+	padding-top: 48px;
+	padding-bottom: 70px;
+	text-align: center;
+	color: #fff;
+
+	&__header {
+		margin-bottom: 25px;
+
+		@media @extrasmall {
+			font-size: 24px;
+		}
+	}
+
+	&__subheader {
+		font-size: 16px;
+		margin-bottom: 35px;
+
+		@media @extrasmall {
+			padding: 0 10px;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		margin-bottom: 40px;
+
+		@media @medium {
+			flex-wrap: nowrap;
+		}
+
+		@media @small {
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+
+		@media @extrasmall {
+			flex-wrap: wrap;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__input {
+		padding-top: 16px;
+		padding-bottom: 16px;
+
+		@media @medium {
+			margin-bottom: 0;
+			width: auto;
+		}
+
+		@media @small {
+			width: 47%;
+			margin-bottom: 20px;
+		}
+
+		@media @extrasmall {
+			margin-bottom: 20px;
+			font-size: 14px;
+		}
+	}
+
+	&__input:not(:last-child) {
+
+		@media @medium {
+			margin-right: 30px;
+		}
+
+		@media @small {
+			margin-right: 0;
+		}
+	}
+
+	&__submit {
+		border: 2px solid #fff;
+		background: transparent;
+		color: #fff;
+		font-size: 16px;
+		font-weight: bold;
+		text-transform: uppercase;
+		width: 245px;
+		cursor: pointer;
+
+		@media @extrasmall {
+			width: 100%;
+		}
+	}
+}

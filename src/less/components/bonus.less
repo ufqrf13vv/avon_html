@@ -1,0 +1,81 @@
+.bonus {
+	background: url('../img/sale_bg.jpg') no-repeat 50% 50%;
+	box-shadow: inset 0px 85px 10px 0px rgba(193, 193, 193, 0.1),
+				inset 0px -85px 10px 0px rgba(193, 193, 193, 0.1);
+	padding-top: 185px;
+	padding-bottom: 135px;
+	background-size: cover;
+
+	&__header {
+		font-weight: bold;
+		font-size: 32px;
+		line-height: 41px;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 60px;
+
+		@media @extrasmall {
+			font-size: 24px;
+			line-height: 31px;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__slogan {
+		display: flex;
+		justify-content: center;
+		color: #FF2AA0;
+		font-weight: bold;
+		margin-bottom: 50px;
+
+		@media @extrasmall {
+			flex-direction: column;
+		}
+
+		& > img {
+			align-self: center;
+		}
+	}
+
+	&__percent {
+		font-size: 141px;
+
+		@media @extrasmall {
+			font-size: 104px;
+			text-align: center;
+		}
+	}
+
+	&__plus {
+		font-size: 71px;
+		align-self: center;
+		margin-left: 45px;
+		margin-right: 55px;
+
+		@media @extrasmall {
+			font-size: 52px;
+			text-align: center;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__button {
+		width: 225px;
+		font-weight: bold;
+		font-size: 16px;
+		padding: 15px 0;
+		border: 1px solid #FF2AA0;
+		text-transform: uppercase;
+		background: transparent;
+		cursor: pointer;
+
+		@media @extrasmall {
+			border-width: 2px;
+			width: 100%;
+		}
+	}
+}
