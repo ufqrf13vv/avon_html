@@ -20,6 +20,14 @@
 			}
 		}
 
+		@media @extrasmall {
+			margin-right: 0;
+		}
+
+		& > img {
+			width: 100%;
+		}
+
 		&::after {
 			content: '';
 			width: 135px;
@@ -36,12 +44,21 @@
 			@media @small {
 				display: none;
 			}
+
+			@media @extrasmall {
+				display: none;
+			}
 		}
 	}
 
-	@media @small {
-		&__text {
+	&__text {
+		@media @small {
 			width: 50%;
+		}
+
+		@media @extrasmall {
+			padding-left: 20px;
+			padding-right: 20px;
 		}
 	}
 }

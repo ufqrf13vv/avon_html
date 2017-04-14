@@ -3,19 +3,55 @@
 	background: url('../../img/header_bg.jpg') no-repeat 50% 0, #FFB700;
 	margin-bottom: 100px;
 
+	@media @extrasmall {
+		height: auto;
+		background: transparent;
+		margin-bottom: 0;
+	}
+
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
 		padding-top: 45px;
 		padding-bottom: 35px;
+
+		@media @extrasmall {
+			padding: 15px 20px;
+			background: #f4d471;
+		}
 	}
 
 	&__logo {
-		display: block;
+		display: flex;
+
+		@media @extrasmall {
+			width: 155px;
+		}
+
+		& > img {
+			width: 100%;
+			margin: auto;
+		}
+	}
+
+	&__burger {
+		display: none;
+
+		@media @extrasmall {
+			display: block;
+			border: none;
+			background: transparent;
+			font-size: 40px;
+			padding: 0;
+		}
 	}
 
 	&__contacts {
 		display: flex;
+
+		@media @extrasmall {
+			display: none;
+		}
 
 		&-item {
 			display: flex;
@@ -27,6 +63,14 @@
 
 			&--email {
 				margin-right: 55px;
+
+				@media @medium {
+					margin-right: 55px;
+				}
+
+				@media @small {
+					margin-right: 15px;
+				}
 			}
 
 			&--email::before {

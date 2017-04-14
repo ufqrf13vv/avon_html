@@ -4,6 +4,12 @@
 	padding: 40px 25px 80px 25px;
 	position: relative;
 
+	@media @extrasmall {
+		width: 320px;
+		box-shadow: inset 0px 3px 3px 0px rgba(0,0,0,0.4);
+		padding-top: 30px;
+	}
+
 	&::before {
 		content: '';
 		width: 0;
@@ -34,6 +40,11 @@
 		text-transform: uppercase;
 		text-align: center;
 		margin-bottom: 30px;
+
+		@media @extrasmall {
+			font-size: 22px;
+			line-height: 26px;
+		}
 	}
 
 	& input {
@@ -53,6 +64,10 @@
 		padding-top: 24px;
 		padding-bottom: 0;
 		margin-bottom: 0;
+
+		@media @extrasmall {
+			font-size: 16px;
+		}
 	}
 
 	&__submit {
@@ -69,6 +84,13 @@
 			position: absolute;
 			top: 44px;
 			left: 0;
+
+			@media @extrasmall {
+				border-left: 135px solid transparent;
+				border-right: 135px solid transparent;
+				border-top: 49px solid #ec008e;
+				top: 42px;
+			}
 		}
 	}
 }
